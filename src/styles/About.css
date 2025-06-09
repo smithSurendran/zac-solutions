@@ -1,0 +1,91 @@
+.about-page {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #222;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(145deg, #00796B 10%, #004D40 90%);
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.about-section {
+  margin-bottom: 60px;
+  padding: 40px 30px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.about-section:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.about-section:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #00796B;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ✅ Checklist Styling */
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.check-icon {
+  color: #00796B;
+  margin-top: 3px;
+  display: inline-flex;
+}
+
+.about-cta {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #e0f2f1;
+  border-radius: 8px;
+  margin-top: 60px;
+}
+
+.about-cta h2 {
+  font-size: 1.8rem;
+  color: #004D40;
+}
+
+.about-cta p {
+  font-size: 1rem;
+  color: #333;
+}
