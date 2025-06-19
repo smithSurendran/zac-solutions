@@ -16,7 +16,7 @@ function About() {
       {/* Mission and Vision */}
       <section className="about-section">
         <h2>Our Mission</h2>
-        <p>To deliver smart, scalable solutions that simplify complexity and fuel sustainable growth for small businesses and entrepreneurs.</p>
+        <p>To deliver smart, scalable solutions that simplify complexity and fuel sustainable growth for diverse businesses and entrepreneurs.</p>
 
         <h2>Our Vision</h2>
         <p>We envision a world where businesses of all sizes can harness technology, data, and operational excellence to succeed without friction.</p>

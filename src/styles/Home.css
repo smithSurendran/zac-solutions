@@ -5,7 +5,7 @@
 }
 
 .hero {
-  background-color: #121619;
+  background-color: #264653;
   color: white;
   padding: 80px 20px;
 }
@@ -13,7 +13,7 @@
 .cta-button {
   margin-top: 20px;
   padding: 12px 30px;
-  background-color: #00796B;
+  background-color: #5eb9af;
   color: white;
   text-decoration: none;
   border-radius: 5px;
