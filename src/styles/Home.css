@@ -5,9 +5,14 @@
 }
 
 .hero {
-  background-color: #264653;
+  background-color: #002147;
   color: white;
   padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;         /* Bigger font size */
+  margin-bottom: 15px;
 }
 
 .cta-button {
