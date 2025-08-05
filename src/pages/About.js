@@ -9,7 +9,7 @@ function About() {
 
       {/* Header Section */}
       <section className="about-hero">
-        <h1>About ZACK Solutions</h1>
+        <h1>About Zack Solutions</h1>
         <p>Driven by a mission to empower businesses through practical, digital-first solutions.</p>
       </section>
 
@@ -47,7 +47,7 @@ function About() {
 
       {/* Closing Section */}
       <section className="about-cta">
-        <h2>Partner with ZACK Solutions</h2>
+        <h2>Partner with Zack Solutions</h2>
         <p>Whether you're starting something new or improving what you’ve built, we’d love to collaborate with you. Let’s shape the future together.</p>
       </section>
 

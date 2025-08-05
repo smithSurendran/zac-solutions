@@ -9,7 +9,7 @@ function Home() {
 
       {/* Hero Section */}
       <section className="hero">
-        <h1>Welcome to ZACK Solutions</h1>
+        <h1>Welcome to Zack Solutions</h1>
         <p>Empowering businesses through innovative digital, operational, and strategic solutions.</p>
         <Link to="/contact" className="cta-button">Get in Touch</Link>
       </section>
@@ -39,7 +39,7 @@ function Home() {
 
       {/* Why Us Section */}
       <section className="why-us">
-        <h2>Why ZACK Solutions?</h2>
+        <h2>Why Zack Solutions?</h2>
           <ul className="checklist">
             <li>
               <span className="check-icon"><CheckCircleIcon /></span>

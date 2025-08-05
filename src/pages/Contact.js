@@ -21,7 +21,7 @@ function Contact() {
   return (
     <div className="contact-page">
       <section className="contact-hero">
-        <h1>Contact ZACK Solutions</h1>
+        <h1>Contact Zack Solutions</h1>
         <p>We’d love to hear from you. Whether you have a question, need support, or want to discuss a project — let’s connect.</p>
       </section>
 

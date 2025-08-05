@@ -38,6 +38,28 @@
   width: 250px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Rainbow pastel backgrounds */
+.card:nth-child(1) {
+  background-color: #fde2e4; /* Light pink */
+}
+
+.card:nth-child(2) {
+  background-color: #fff1ba; /* Soft yellow */
+}
+
+.card:nth-child(3) {
+  background-color: #d0f4de; /* Light green */
+}
+
+.card:nth-child(4) {
+  background-color: #cde7f0; /* Sky blue */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .about-preview {
