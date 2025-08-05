@@ -9,7 +9,7 @@ function Home() {
 
       {/* Hero Section */}
       <section className="hero">
-        <h1>Welcome to ZAC Solutions</h1>
+        <h1>Welcome to ZACK Solutions</h1>
         <p>Empowering businesses through innovative digital, operational, and strategic solutions.</p>
         <Link to="/contact" className="cta-button">Get in Touch</Link>
       </section>
@@ -39,7 +39,7 @@ function Home() {
 
       {/* Why Us Section */}
       <section className="why-us">
-        <h2>Why ZAC Solutions?</h2>
+        <h2>Why ZACK Solutions?</h2>
           <ul className="checklist">
             <li>
               <span className="check-icon"><CheckCircleIcon /></span>
@@ -62,8 +62,8 @@ function Home() {
 
       {/* About Us */}
       <section className="about-preview">
-        <h2>About ZAC</h2>
-        <p>ZAC Solutions is a client-first service provider dedicated to delivering practical, scalable, and impactful business solutions. We combine technology, operations, and creativity to support your next move — whatever that may be.</p>
+        <h2>About ZACK</h2>
+        <p>ZACK Solutions is a client-first service provider dedicated to delivering practical, scalable, and impactful business solutions. We combine technology, operations, and creativity to support your next move — whatever that may be.</p>
         <Link to="/about" className="link-button">Learn More</Link>
       </section>
 
