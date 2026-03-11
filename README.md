@@ -43,6 +43,22 @@ npm start
 
 ---
 
+## 🔐 Environment Variables
+
+Create a local `.env` file based on `.env.example`.
+
+```bash
+cp .env.example .env
+```
+
+Required for current frontend-only Stripe flow:
+
+- `REACT_APP_STRIPE_PAYMENT_LINK_BOOK_SERVICE`
+  - A Stripe Payment Link URL from your Stripe Dashboard.
+  - This is safe to expose in frontend code because it is not a secret key.
+
+---
+
 ## ✉️ Configure EmailJS
 1. Create an account at [emailjs.com](https://www.emailjs.com)
 2. Add a new email service (e.g., Gmail)
@@ -56,13 +72,55 @@ emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBL
 
 ---
 
+## 💳 Stripe (Frontend-Only for Now)
+
+Current implementation uses a Stripe Payment Link redirect with no backend:
+
+1. User clicks the reusable payment button in Home page.
+2. UI calls `startPayment(...)` in `src/services/paymentService.js`.
+3. Service delegates to `src/services/stripeService.js`.
+4. App redirects browser to the Stripe-hosted payment page.
+
+No Stripe secret key is used in frontend code.
+
+### Key files
+- `src/config/paymentConfig.js` -> central place for product/payment-link mapping.
+- `src/services/paymentService.js` -> app-level payment abstraction layer.
+- `src/services/stripeService.js` -> Stripe-specific redirect logic.
+- `src/components/PaymentButton.js` -> reusable payment CTA component.
+
+---
+
+## 🧭 Backend Migration Path (Later)
+
+When you are ready to add backend payments:
+
+1. Keep UI components as-is (`PaymentButton` and calls to `startPayment`).
+2. Update `startPayment` in `src/services/paymentService.js` to call your backend endpoint.
+3. Backend creates Stripe Checkout Sessions / Payment Intents with your secret key.
+4. Backend handles webhooks for payment verification and fulfillment.
+
+This lets you migrate without rewriting your page components.
+
+---
+
+## ▲ Vercel Deployment Notes
+
+- Add `REACT_APP_STRIPE_PAYMENT_LINK_BOOK_SERVICE` in Vercel Project Settings -> Environment Variables.
+- Deploy as a static React app using existing `build` script.
+- No custom server is required for current payment-link flow.
+
+---
+
 ## 📁 Folder Structure
 ```
 src/
-├── components/        # Navbar and reusable components
+├── components/        # Navbar, PaymentButton, and reusable components
+├── config/            # Payment config (product/link mapping)
 ├── pages/             # Home.js, About.js, Contact.js
-├── styles/            # Home.css, About.css, Contact.css
-├── App.js             # Main app wrapper
+├── services/          # paymentService and Stripe provider implementation
+├── styles/            # Page and component CSS files
+├── App.js             # Main app wrapper + routes
 └── index.js
 ```
 

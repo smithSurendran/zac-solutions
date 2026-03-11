@@ -1,0 +1,100 @@
+.service-offer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px 22px;
+  border-radius: 20px;
+  border: 1px solid rgba(16, 55, 99, 0.15);
+  background: linear-gradient(170deg, #ffffff, #f7fbff);
+  box-shadow: 0 12px 28px rgba(15, 41, 76, 0.11);
+  transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+}
+
+.service-offer-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(13, 125, 118, 0.3);
+  box-shadow: 0 18px 32px rgba(11, 36, 68, 0.16);
+}
+
+.service-offer-head {
+  display: grid;
+  gap: 6px;
+}
+
+.service-offer-type {
+  margin: 0;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-weight: 700;
+  color: #1e6d7e;
+}
+
+.service-offer-head h3 {
+  margin: 0;
+  font-size: 1.32rem;
+  color: #102b4d;
+}
+
+.service-offer-price {
+  margin: 0;
+  font-family: 'Sora', 'Manrope', sans-serif;
+  font-size: 1.7rem;
+  color: #0a6f6a;
+}
+
+.service-offer-description {
+  margin: 0;
+  color: #4a5f7b;
+}
+
+.service-offer-features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.service-offer-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #254668;
+  font-size: 0.95rem;
+}
+
+.service-offer-features svg {
+  color: #0d7d76;
+  font-size: 1.15rem;
+  margin-top: 1px;
+}
+
+.service-offer-cta {
+  margin-top: auto;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 10px 18px;
+  border-radius: 11px;
+  border: none;
+  text-decoration: none;
+  font-weight: 700;
+  color: #083146;
+  background: linear-gradient(132deg, #8de2da, #65bcff);
+  box-shadow: 0 10px 20px rgba(38, 126, 193, 0.34);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.service-offer-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 13px 24px rgba(29, 111, 174, 0.44);
+}
+
+.service-offer-note {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #5f728d;
+}

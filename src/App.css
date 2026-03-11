@@ -1,12 +1,67 @@
-.App{
-  width: 100%;
-  height:auto;
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap');
+
+:root {
+  --bg: #f2f7fc;
+  --surface: #ffffff;
+  --surface-soft: #f8fbff;
+  --text-primary: #10213d;
+  --text-secondary: #51617a;
+  --navy-900: #0a1630;
+  --navy-700: #15315e;
+  --teal-600: #0d7d76;
+  --teal-700: #075d58;
+  --accent: #4a8bff;
+  --border-soft: rgba(12, 42, 82, 0.14);
+  --shadow-sm: 0 10px 24px rgba(15, 36, 70, 0.08);
+  --shadow-md: 0 18px 45px rgba(12, 35, 71, 0.13);
+  --radius-lg: 22px;
+  --radius-md: 14px;
 }
 
-body{
-  padding: 0%;
-  margin: 0%;
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  background:
+    radial-gradient(circle at 8% -8%, rgba(74, 139, 255, 0.12), transparent 42%),
+    radial-gradient(circle at 88% 0%, rgba(13, 125, 118, 0.14), transparent 36%),
+    var(--bg);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: 'Sora', 'Manrope', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+::selection {
+  color: #ffffff;
+  background: rgba(13, 125, 118, 0.8);
 }

@@ -1,56 +1,73 @@
 import React from 'react';
-import '../styles/About.css';
+import { Link } from 'react-router-dom';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import '../styles/About.css';
 
+const DIFFERENTIATORS = [
+  'Client-first mindset: solutions tailored to your goals and constraints',
+  'Cross-functional expertise across technology, operations, and growth strategy',
+  'Agile team with a bias for action and long-term partnerships',
+  'Transparent process and communication at every stage of delivery',
+];
 
 function About() {
   return (
     <div className="about-page">
-
-      {/* Header Section */}
       <section className="about-hero">
+        <p className="about-kicker">Who We Are</p>
         <h1>About Zack Solutions</h1>
-        <p>Driven by a mission to empower businesses through practical, digital-first solutions.</p>
+        <p>
+          We help businesses simplify operations, modernize digital systems, and execute strategic priorities with
+          clarity.
+        </p>
       </section>
 
-      {/* Mission and Vision */}
-      <section className="about-section">
-        <h2>Our Mission</h2>
-        <p>To deliver smart, scalable solutions that simplify complexity and fuel sustainable growth for diverse businesses and entrepreneurs.</p>
+      <section className="about-mission-grid">
+        <article className="about-card">
+          <h2>Our Mission</h2>
+          <p>
+            Deliver smart, scalable solutions that reduce complexity and support sustainable growth for entrepreneurs
+            and growing teams.
+          </p>
+        </article>
 
-        <h2>Our Vision</h2>
-        <p>We envision a world where businesses of all sizes can harness technology, data, and operational excellence to succeed without friction.</p>
+        <article className="about-card">
+          <h2>Our Vision</h2>
+          <p>
+            Build a future where companies of every size can use technology and operational excellence to compete with
+            confidence.
+          </p>
+        </article>
       </section>
 
-      {/* What Makes Us Different */}
-      <section className="about-section">
-        <h2>What Makes Us Different?</h2>
-        <ul className="checklist">
-          <li>
-            <span className="check-icon"><CheckCircleIcon /></span>
-            <span>Client-first mindset — we tailor solutions, not templates</span>
-          </li>
-          <li>
-            <span className="check-icon"><CheckCircleIcon /></span>
-            <span>Cross-functional expertise spanning tech, business, and marketing</span>
-          </li>
-          <li>
-            <span className="check-icon"><CheckCircleIcon /></span>
-            <span>Agile team with a bias for action and long-term partnerships</span>
-          </li>
-          <li>
-            <span className="check-icon"><CheckCircleIcon /></span>
-            <span>Transparent process and open communication every step of the way</span>
-          </li>
+      <section className="about-difference">
+        <div className="about-difference-head">
+          <p className="about-kicker">What Makes Us Different</p>
+          <h2>Business Context + Practical Execution</h2>
+        </div>
+
+        <ul className="about-checklist">
+          {DIFFERENTIATORS.map((item) => (
+            <li key={item}>
+              <span className="check-icon" aria-hidden="true">
+                <CheckCircleIcon />
+              </span>
+              <span>{item}</span>
+            </li>
+          ))}
         </ul>
       </section>
 
-      {/* Closing Section */}
       <section className="about-cta">
         <h2>Partner with Zack Solutions</h2>
-        <p>Whether you're starting something new or improving what you’ve built, we’d love to collaborate with you. Let’s shape the future together.</p>
+        <p>
+          Whether you are launching something new or improving what you have built, we can help you move forward with
+          stronger structure and measurable outcomes.
+        </p>
+        <Link to="/contact" className="about-cta-link">
+          Start a Conversation
+        </Link>
       </section>
-
     </div>
   );
 }
