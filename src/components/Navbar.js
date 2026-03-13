@@ -51,7 +51,10 @@ function Navbar() {
       <div className="navbar-shell">
         <NavLink to="/" className="brand" onClick={closeAllMenus}>
           <img src={Logo} alt="Zack Solutions logo" />
-          <span className="brand-text">Zack Solutions</span>
+          <span className="brand-copy">
+            <span className="brand-text">Zack Solutions</span>
+            <span className="brand-tagline">Transforming Business for Tomorrow</span>
+          </span>
         </NavLink>
 
         <button
@@ -94,8 +97,8 @@ function Navbar() {
               <ExpandMoreRoundedIcon />
             </button>
 
-            <div className="services-dropdown" role="menu" aria-label="Service subscriptions">
-              <p className="services-dropdown-kicker">Subscription Plans</p>
+            <div className="services-dropdown" role="menu" aria-label="Tailored service engagements">
+              <p className="services-dropdown-kicker">Tailored Service Tracks</p>
               <div className="services-preview-list">
                 {SUBSCRIPTION_SERVICES.map((service) => (
                   <NavLink
@@ -106,14 +109,14 @@ function Navbar() {
                   >
                     <div className="service-preview-head">
                       <span>{service.title}</span>
-                      <strong>{service.priceLabel}</strong>
+                      <span className="service-preview-tag">Tailored</span>
                     </div>
                     <p>{service.shortDescription}</p>
                   </NavLink>
                 ))}
               </div>
               <NavLink to="/services" className="services-dropdown-footer" onClick={closeAllMenus}>
-                View all services
+                Explore service engagements
               </NavLink>
             </div>
           </div>
@@ -137,11 +140,11 @@ function Navbar() {
                   onClick={closeAllMenus}
                 >
                   <span>{service.title}</span>
-                  <strong>{service.priceLabel}</strong>
+                  <span className="mobile-service-tag">Tailored</span>
                 </NavLink>
               ))}
               <NavLink to="/services" className="mobile-services-all" onClick={closeAllMenus}>
-                Browse all plans
+                Browse all service tracks
               </NavLink>
             </div>
           </div>

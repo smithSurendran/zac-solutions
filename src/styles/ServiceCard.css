@@ -3,17 +3,17 @@
   flex-direction: column;
   gap: 14px;
   padding: 24px 22px;
-  border-radius: 20px;
-  border: 1px solid rgba(16, 55, 99, 0.15);
-  background: linear-gradient(170deg, #ffffff, #f7fbff);
-  box-shadow: 0 12px 28px rgba(15, 41, 76, 0.11);
-  transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+  border-radius: 18px;
+  border: 1px solid rgba(31, 70, 138, 0.16);
+  background: linear-gradient(172deg, #ffffff, #f6f9ff);
+  box-shadow: 0 12px 25px rgba(14, 39, 82, 0.09);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
 }
 
 .service-offer-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(13, 125, 118, 0.3);
-  box-shadow: 0 18px 32px rgba(11, 36, 68, 0.16);
+  transform: translateY(-3px);
+  border-color: rgba(66, 113, 214, 0.42);
+  box-shadow: 0 18px 31px rgba(13, 35, 72, 0.16);
 }
 
 .service-offer-head {
@@ -23,29 +23,34 @@
 
 .service-offer-type {
   margin: 0;
-  font-size: 0.74rem;
+  width: fit-content;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(84, 121, 214, 0.25);
+  background: rgba(90, 128, 223, 0.08);
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.12em;
   font-weight: 700;
-  color: #1e6d7e;
+  color: #2853b9;
 }
 
 .service-offer-head h3 {
   margin: 0;
-  font-size: 1.32rem;
-  color: #102b4d;
+  font-size: 1.28rem;
+  color: #0f2a53;
 }
 
-.service-offer-price {
+.service-offer-track {
   margin: 0;
   font-family: 'Sora', 'Manrope', sans-serif;
-  font-size: 1.7rem;
-  color: #0a6f6a;
+  font-size: 1rem;
+  color: #2958c2;
 }
 
 .service-offer-description {
   margin: 0;
-  color: #4a5f7b;
+  color: #4a5d80;
 }
 
 .service-offer-features {
@@ -60,13 +65,13 @@
   display: flex;
   align-items: flex-start;
   gap: 9px;
-  color: #254668;
-  font-size: 0.95rem;
+  color: #294566;
+  font-size: 0.93rem;
 }
 
 .service-offer-features svg {
-  color: #0d7d76;
-  font-size: 1.15rem;
+  color: #2f62d9;
+  font-size: 1.12rem;
   margin-top: 1px;
 }
 
@@ -82,19 +87,19 @@
   border: none;
   text-decoration: none;
   font-weight: 700;
-  color: #083146;
-  background: linear-gradient(132deg, #8de2da, #65bcff);
-  box-shadow: 0 10px 20px rgba(38, 126, 193, 0.34);
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  color: #f5f8ff;
+  background: linear-gradient(132deg, #2f62d9, #2853bc);
+  box-shadow: 0 11px 22px rgba(33, 72, 154, 0.36);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .service-offer-cta:hover {
   transform: translateY(-1px);
-  box-shadow: 0 13px 24px rgba(29, 111, 174, 0.44);
+  box-shadow: 0 14px 26px rgba(26, 59, 127, 0.45);
 }
 
 .service-offer-note {
   margin: 0;
   font-size: 0.82rem;
-  color: #5f728d;
+  color: #627494;
 }

@@ -2,47 +2,35 @@ export const SUBSCRIPTION_SERVICES = [
   {
     title: 'Social Media Content Creation',
     slug: 'social-media-content-creation',
-    price: 600,
-    billingType: 'month',
-    priceLabel: '$600/month',
+    engagementTrack: 'Visibility and Content Operations',
     shortDescription:
-      'Content creation support for social media presence, branded posts, and consistent business visibility.',
+      'Structured social content operations including branded asset production, publishing workflow design, and visibility execution aligned to your growth stage.',
     features: [
-      'Branded content creation for your social channels',
-      'Consistent posting support',
-      'Better visibility and audience engagement',
+      'Branded content templates and production process setup',
+      'Editorial calendar and publishing workflow standardization',
+      'Approval loops, scheduling handoff, and communication cadence',
+      'Baseline performance reporting for visibility tracking',
     ],
-    ctaLabel: 'Subscribe',
+    ctaLabel: 'Request Tailored Scope',
     paymentLink: process.env.REACT_APP_STRIPE_PAYMENT_LINK_SOCIAL_MEDIA || '',
   },
   {
-    title: 'Full Coverage Package',
-    slug: 'full-coverage-package',
-    price: 1000,
-    billingType: 'month',
-    priceLabel: '$1000/month',
+    title: 'Full Coverage Support',
+    slug: 'full-coverage-support',
+    engagementTrack: 'Digital Operations and Continuity',
     shortDescription:
-      'Full coverage including website monitoring, online presence support, and portfolio management.',
+      'Comprehensive digital operations support covering website monitoring, portfolio oversight, and structured online presence management.',
     features: [
-      'Website monitoring',
-      'Online presence management',
-      'Portfolio management',
-      'Broader digital support for your business',
+      'Website monitoring, health checks, and support updates',
+      'Online profile and brand presence management workflow',
+      'Portfolio and digital asset governance framework',
+      'Recurring operational review with implementation priorities',
     ],
-    ctaLabel: 'Subscribe',
+    ctaLabel: 'Book Technical Consultation',
     paymentLink: process.env.REACT_APP_STRIPE_PAYMENT_LINK_FULL_COVERAGE || '',
   },
 ];
 
-export function getServiceCheckoutLink(service) {
-  if (service.paymentLink) {
-    return service.paymentLink;
-  }
-
-  // Frontend-only fallback while Stripe links/backend checkout are not connected.
+export function getServiceInquiryLink(service) {
   return `/contact?service=${encodeURIComponent(service.slug)}`;
-}
-
-export function hasServicePaymentLink(service) {
-  return Boolean(service.paymentLink);
 }
