@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import ReorderIcon from '@mui/icons-material/Reorder';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
 import Logo from '../assets/ZACKLogo.png';
-import { SUBSCRIPTION_SERVICES } from '../config/subscriptionServices';
+import { NAV_SERVICES } from '../config/subscriptionServices';
+import { startPayment } from '../services/paymentService';
 import '../styles/Navbar.css';
 
 const MAIN_ITEMS = [
@@ -16,9 +17,11 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDesktopServicesOpen, setIsDesktopServicesOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const [isCheckoutLoading, setIsCheckoutLoading] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
-  const isServicesRoute = location.pathname === '/services';
+  const isServicesRoute = location.pathname.startsWith('/services');
 
   useEffect(() => {
     document.body.classList.toggle('menu-open', isMenuOpen);
@@ -43,6 +46,23 @@ function Navbar() {
   const handleDesktopMenuBlur = (event) => {
     if (!event.currentTarget.contains(event.relatedTarget)) {
       setIsDesktopServicesOpen(false);
+    }
+  };
+
+  const handleGetStartedCheckout = async () => {
+    closeAllMenus();
+
+    if (isCheckoutLoading) {
+      return;
+    }
+
+    setIsCheckoutLoading(true);
+
+    try {
+      await startPayment({ productId: 'bookService' });
+    } catch {
+      setIsCheckoutLoading(false);
+      navigate('/contact');
     }
   };
 
@@ -97,27 +117,24 @@ function Navbar() {
               <ExpandMoreRoundedIcon />
             </button>
 
-            <div className="services-dropdown" role="menu" aria-label="Tailored service engagements">
-              <p className="services-dropdown-kicker">Tailored Service Tracks</p>
+            <div className="services-dropdown" role="menu" aria-label="Service detail views">
+              <p className="services-dropdown-kicker">Service Detail Views</p>
               <div className="services-preview-list">
-                {SUBSCRIPTION_SERVICES.map((service) => (
+                {NAV_SERVICES.map((service) => (
                   <NavLink
                     key={service.slug}
-                    to={`/services#${service.slug}`}
+                    to={`/services/${service.slug}`}
                     className="service-preview-link"
                     onClick={closeAllMenus}
                   >
                     <div className="service-preview-head">
                       <span>{service.title}</span>
-                      <span className="service-preview-tag">Tailored</span>
+                      <span className="service-preview-tag">View</span>
                     </div>
-                    <p>{service.shortDescription}</p>
+                    <p>{service.navDescription}</p>
                   </NavLink>
                 ))}
               </div>
-              <NavLink to="/services" className="services-dropdown-footer" onClick={closeAllMenus}>
-                Explore service engagements
-              </NavLink>
             </div>
           </div>
 
@@ -132,20 +149,17 @@ function Navbar() {
               <ExpandMoreRoundedIcon />
             </button>
             <div className="mobile-services-list">
-              {SUBSCRIPTION_SERVICES.map((service) => (
+              {NAV_SERVICES.map((service) => (
                 <NavLink
                   key={service.slug}
-                  to={`/services#${service.slug}`}
+                  to={`/services/${service.slug}`}
                   className="mobile-service-link"
                   onClick={closeAllMenus}
                 >
                   <span>{service.title}</span>
-                  <span className="mobile-service-tag">Tailored</span>
+                  <span className="mobile-service-tag">View</span>
                 </NavLink>
               ))}
-              <NavLink to="/services" className="mobile-services-all" onClick={closeAllMenus}>
-                Browse all service tracks
-              </NavLink>
             </div>
           </div>
 
@@ -153,9 +167,15 @@ function Navbar() {
             Contact
           </NavLink>
 
-          <NavLink to="/contact" onClick={closeAllMenus} className="nav-cta">
-            Get Started
-          </NavLink>
+          <button
+            type="button"
+            className="nav-cta"
+            onClick={handleGetStartedCheckout}
+            disabled={isCheckoutLoading}
+            aria-busy={isCheckoutLoading}
+          >
+            {isCheckoutLoading ? 'Redirecting...' : 'Get Started'}
+          </button>
         </nav>
       </div>
     </header>

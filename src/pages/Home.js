@@ -7,6 +7,7 @@ import AutoGraphRoundedIcon from '@mui/icons-material/AutoGraphRounded';
 import HandshakeRoundedIcon from '@mui/icons-material/HandshakeRounded';
 import ArrowOutwardRoundedIcon from '@mui/icons-material/ArrowOutwardRounded';
 import PaymentButton from '../components/PaymentButton';
+import TestimonialsSection from '../components/TestimonialsSection';
 import '../styles/Home.css';
 
 const SERVICES = [
@@ -195,6 +196,8 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <TestimonialsSection />
 
       <section className="contact-cta section-shell">
         <h2>Ready to simplify your operations and scale with confidence?</h2>

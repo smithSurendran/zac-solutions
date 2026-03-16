@@ -28,8 +28,9 @@ export async function redirectToStripePaymentLink({ productId, customerEmail }) 
   }
 
   if (!product.paymentLink) {
+    const expectedEnv = product.envVar || 'REACT_APP_STRIPE_PAYMENT_LINK_BOOK_SERVICE';
     throw new Error(
-      `Missing payment link for "${productId}". Set REACT_APP_STRIPE_PAYMENT_LINK_BOOK_SERVICE in your environment.`
+      `Missing payment link for "${productId}". Set ${expectedEnv} in your environment.`
     );
   }
 
@@ -50,4 +51,3 @@ export async function redirectToStripePaymentLink({ productId, customerEmail }) 
 
   return { status: 'redirecting', redirectUrl };
 }
-

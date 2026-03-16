@@ -4,7 +4,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { DEFAULT_SERVICE_SLUG } from './config/subscriptionServices';
+import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/services" element={<Navigate to={`/services/${DEFAULT_SERVICE_SLUG}`} replace />} />
+          <Route path="/services/:slug" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>

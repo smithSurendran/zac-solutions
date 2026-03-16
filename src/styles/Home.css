@@ -465,6 +465,10 @@
   animation-delay: 0.19s;
 }
 
+.home section:nth-of-type(7) {
+  animation-delay: 0.23s;
+}
+
 @keyframes sectionFade {
   from {
     opacity: 0;

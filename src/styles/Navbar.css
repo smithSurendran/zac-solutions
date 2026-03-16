@@ -230,12 +230,19 @@
 }
 
 .nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   font-weight: 700;
+  font-family: inherit;
+  font-size: 0.95rem;
+  border: none;
   color: #f4f8ff;
   background: linear-gradient(135deg, #366de5, #2854bc);
   padding: 10px 16px;
   border-radius: 11px;
+  cursor: pointer;
   box-shadow: 0 9px 20px rgba(24, 56, 124, 0.45);
   transition: transform 0.24s ease, box-shadow 0.24s ease, filter 0.24s ease;
 }
@@ -244,6 +251,11 @@
   transform: translateY(-1px);
   filter: brightness(1.03);
   box-shadow: 0 13px 26px rgba(20, 49, 110, 0.52);
+}
+
+.nav-cta:disabled {
+  opacity: 0.85;
+  cursor: progress;
 }
 
 .mobile-services {
