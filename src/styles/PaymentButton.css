@@ -9,22 +9,23 @@
 .payment-button {
   width: 100%;
   min-height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.38);
+  border: 1px solid rgba(77, 163, 255, 0.42);
   border-radius: 12px;
-  background: linear-gradient(135deg, #8be4dc, #66bbff);
-  color: #083047;
+  background: linear-gradient(135deg, #2e6dff, #2459d6);
+  color: #ffffff;
   font-family: 'Sora', 'Manrope', sans-serif;
   font-weight: 700;
   font-size: 0.98rem;
   cursor: pointer;
-  box-shadow: 0 12px 24px rgba(31, 128, 199, 0.34);
+  box-shadow: 0 12px 24px rgba(46, 109, 255, 0.42);
   transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease, opacity 0.22s ease;
 }
 
 .payment-button:hover:not(:disabled) {
   transform: translateY(-2px);
-  filter: brightness(1.02);
-  box-shadow: 0 14px 27px rgba(20, 111, 177, 0.45);
+  background: linear-gradient(135deg, #4da3ff, #2e6dff);
+  box-shadow: 0 14px 27px rgba(77, 163, 255, 0.48);
+  filter: none;
 }
 
 .payment-button:disabled {
@@ -49,9 +50,9 @@
 }
 
 .payment-feedback.info {
-  color: #e6f5ff;
-  border: 1px solid rgba(174, 222, 255, 0.4);
-  background: rgba(20, 82, 136, 0.32);
+  color: #d9ebff;
+  border: 1px solid rgba(77, 163, 255, 0.48);
+  background: rgba(23, 59, 102, 0.75);
 }
 
 @media (max-width: 760px) {

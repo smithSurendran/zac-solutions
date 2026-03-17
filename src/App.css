@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap');
 
 :root {
-  --bg: #eaf0fb;
-  --surface: #ffffff;
-  --surface-soft: #f6f9ff;
-  --text-primary: #0f2142;
-  --text-secondary: #4a5d7f;
-  --navy-900: #0b1d3f;
-  --navy-800: #102a59;
-  --navy-700: #1e4288;
-  --teal-600: #2f62d9;
-  --teal-700: #244eb3;
-  --accent: #6f96ff;
-  --border-soft: rgba(20, 57, 120, 0.16);
-  --shadow-sm: 0 12px 28px rgba(13, 36, 80, 0.1);
-  --shadow-md: 0 22px 46px rgba(10, 30, 68, 0.16);
+  --bg: #0b1f3a;
+  --surface: #132f55;
+  --surface-soft: #173b66;
+  --text-primary: #ffffff;
+  --text-secondary: #c7d4e8;
+  --navy-900: #0b1f3a;
+  --navy-800: #0f2a4a;
+  --navy-700: #132f55;
+  --teal-600: #2e6dff;
+  --teal-700: #2459d6;
+  --accent: #4da3ff;
+  --border-soft: rgba(255, 255, 255, 0.08);
+  --shadow-sm: 0 14px 28px rgba(0, 0, 0, 0.28);
+  --shadow-md: 0 24px 46px rgba(0, 0, 0, 0.35);
   --radius-lg: 22px;
   --radius-md: 14px;
 }
@@ -34,9 +34,9 @@ body {
   font-family: 'Manrope', 'Segoe UI', sans-serif;
   color: var(--text-primary);
   background:
-    radial-gradient(circle at 6% -12%, rgba(111, 150, 255, 0.2), transparent 42%),
-    radial-gradient(circle at 92% 2%, rgba(99, 143, 246, 0.16), transparent 38%),
-    linear-gradient(165deg, #eef4ff 0%, #e8effc 52%, #edf3ff 100%);
+    radial-gradient(circle at 8% -18%, rgba(77, 163, 255, 0.16), transparent 42%),
+    radial-gradient(circle at 92% 2%, rgba(46, 109, 255, 0.14), transparent 36%),
+    linear-gradient(165deg, #0b1f3a 0%, #0f2a4a 52%, #132f55 100%);
   line-height: 1.6;
 }
 
@@ -64,5 +64,5 @@ a {
 
 ::selection {
   color: #ffffff;
-  background: rgba(47, 98, 217, 0.82);
+  background: rgba(46, 109, 255, 0.86);
 }

@@ -11,9 +11,9 @@
   padding: clamp(48px, 7vw, 72px) clamp(22px, 5vw, 56px);
   border-radius: 28px;
   background:
-    radial-gradient(circle at 18% 12%, rgba(143, 236, 228, 0.22), transparent 44%),
-    radial-gradient(circle at 89% 10%, rgba(105, 165, 255, 0.3), transparent 34%),
-    linear-gradient(148deg, #0b1d3f 8%, #103e73 72%, #0d7d76 130%);
+    radial-gradient(circle at 18% 12%, rgba(77, 163, 255, 0.2), transparent 44%),
+    radial-gradient(circle at 89% 10%, rgba(46, 109, 255, 0.28), transparent 34%),
+    linear-gradient(148deg, #0b1f3a 8%, #0f2a4a 72%, #132f55 130%);
   box-shadow: var(--shadow-md);
 }
 
@@ -23,19 +23,19 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgb(237 181 65);
+  color: #4da3ff;
 }
 
 .about-hero h1 {
   margin-bottom: 14px;
   font-size: clamp(2rem, 5vw, 3.2rem);
-  color: #f7fbff;
+  color: #ffffff;
 }
 
 .about-hero p {
   margin: 0;
   max-width: 760px;
-  color: rgba(232, 244, 255, 0.92);
+  color: var(--text-secondary);
   font-size: clamp(1rem, 2vw, 1.18rem);
 }
 
@@ -50,13 +50,13 @@
   padding: 26px 22px;
   border-radius: 20px;
   border: 1px solid var(--border-soft);
-  background: linear-gradient(168deg, #ffffff, #f8fbff);
+  background: linear-gradient(168deg, #173b66, #132f55);
   box-shadow: var(--shadow-sm);
 }
 
 .about-card h2 {
   margin-bottom: 10px;
-  color: #113257;
+  color: #ffffff;
 }
 
 .about-card p {
@@ -69,14 +69,14 @@
   padding: clamp(24px, 5vw, 34px);
   border-radius: 22px;
   border: 1px solid var(--border-soft);
-  background: linear-gradient(170deg, #ffffff, #f6fbff);
+  background: linear-gradient(170deg, #132f55, #102846);
   box-shadow: var(--shadow-sm);
 }
 
 .about-difference-head h2 {
   margin: 0 0 10px;
   font-size: clamp(1.62rem, 3.2vw, 2.08rem);
-  color: #132f53;
+  color: #ffffff;
 }
 
 .about-checklist {
@@ -91,14 +91,14 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  color: #284769;
+  color: var(--text-secondary);
   font-weight: 500;
 }
 
 .check-icon {
   margin-top: 2px;
   display: inline-flex;
-  color: var(--teal-600);
+  color: #4da3ff;
 }
 
 .check-icon svg {
@@ -110,23 +110,23 @@
   text-align: center;
   padding: clamp(32px, 6vw, 48px);
   border-radius: 24px;
-  border: 1px solid rgba(18, 62, 112, 0.2);
+  border: 1px solid var(--border-soft);
   background:
-    radial-gradient(circle at 86% 12%, rgba(125, 202, 255, 0.24), transparent 42%),
-    linear-gradient(156deg, #10294c, #123f74);
-  box-shadow: 0 16px 34px rgba(12, 36, 72, 0.28);
+    radial-gradient(circle at 86% 12%, rgba(77, 163, 255, 0.25), transparent 42%),
+    linear-gradient(156deg, #0f2a4a, #132f55);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.35);
 }
 
 .about-cta h2 {
   margin-bottom: 10px;
-  color: #f8fcff;
+  color: #ffffff;
   font-size: clamp(1.62rem, 3.4vw, 2.2rem);
 }
 
 .about-cta p {
   margin: 0 auto 20px;
   max-width: 760px;
-  color: rgba(233, 244, 255, 0.92);
+  color: var(--text-secondary);
 }
 
 .about-cta-link {
@@ -138,15 +138,16 @@
   border-radius: 12px;
   text-decoration: none;
   font-weight: 700;
-  color: #082c3d;
-  background: linear-gradient(132deg, #8de2da, #65b9ff);
-  box-shadow: 0 10px 22px rgba(36, 126, 195, 0.38);
+  color: #ffffff;
+  background: linear-gradient(132deg, #2e6dff, #2459d6);
+  box-shadow: 0 12px 24px rgba(46, 109, 255, 0.4);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
 .about-cta-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 13px 26px rgba(31, 117, 182, 0.45);
+  background: linear-gradient(132deg, #4da3ff, #2e6dff);
+  box-shadow: 0 15px 28px rgba(77, 163, 255, 0.44);
 }
 
 @media (max-width: 900px) {
