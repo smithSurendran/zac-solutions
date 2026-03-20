@@ -1,20 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap');
 
 :root {
-  --bg: #0b1f3a;
-  --surface: #132f55;
-  --surface-soft: #173b66;
-  --text-primary: #ffffff;
-  --text-secondary: #c7d4e8;
-  --navy-900: #0b1f3a;
-  --navy-800: #0f2a4a;
-  --navy-700: #132f55;
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --surface-soft: #eef3f8;
+  --surface-muted: #eef3f8;
+  --text-primary: #0f1f35;
+  --text-secondary: #5d6b7c;
+  --navy-900: #0d2a4d;
+  --navy-800: #123a6f;
+  --navy-700: #1c4f95;
   --teal-600: #2e6dff;
-  --teal-700: #2459d6;
+  --teal-700: #245ed9;
   --accent: #4da3ff;
-  --border-soft: rgba(255, 255, 255, 0.08);
-  --shadow-sm: 0 14px 28px rgba(0, 0, 0, 0.28);
-  --shadow-md: 0 24px 46px rgba(0, 0, 0, 0.35);
+  --gold-500: #e2b04a;
+  --gold-400: #f0c66f;
+  --gold-glow: rgba(226, 176, 74, 0.3);
+  --royal-start: #0d2a4d;
+  --royal-end: #123a6f;
+  --royal-gradient: linear-gradient(135deg, #0d2a4d, #123a6f);
+  --blue-gradient: linear-gradient(135deg, #2e6dff, #245ed9);
+  --border-soft: rgba(228, 234, 241, 0.95);
+  --border-strong: rgba(20, 57, 120, 0.24);
+  --shadow-sm: 0 12px 28px rgba(13, 36, 80, 0.09);
+  --shadow-md: 0 22px 46px rgba(10, 30, 68, 0.15);
+  --glow-soft: 0 16px 30px rgba(46, 109, 255, 0.2);
   --radius-lg: 22px;
   --radius-md: 14px;
 }
@@ -34,9 +44,9 @@ body {
   font-family: 'Manrope', 'Segoe UI', sans-serif;
   color: var(--text-primary);
   background:
-    radial-gradient(circle at 8% -18%, rgba(77, 163, 255, 0.16), transparent 42%),
-    radial-gradient(circle at 92% 2%, rgba(46, 109, 255, 0.14), transparent 36%),
-    linear-gradient(165deg, #0b1f3a 0%, #0f2a4a 52%, #132f55 100%);
+    radial-gradient(circle at 6% -12%, rgba(109, 156, 255, 0.12), transparent 38%),
+    radial-gradient(circle at 94% -8%, rgba(77, 163, 255, 0.09), transparent 32%),
+    linear-gradient(170deg, #f7f9fc 0%, #f1f5fb 54%, #f6f8fb 100%);
   line-height: 1.6;
 }
 
@@ -64,5 +74,5 @@ a {
 
 ::selection {
   color: #ffffff;
-  background: rgba(46, 109, 255, 0.86);
+  background: rgba(47, 98, 217, 0.82);
 }

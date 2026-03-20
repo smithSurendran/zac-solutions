@@ -9,23 +9,22 @@
 .payment-button {
   width: 100%;
   min-height: 50px;
-  border: 1px solid rgba(77, 163, 255, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 12px;
-  background: linear-gradient(135deg, #2e6dff, #2459d6);
+  background: var(--blue-gradient);
   color: #ffffff;
   font-family: 'Sora', 'Manrope', sans-serif;
   font-weight: 700;
   font-size: 0.98rem;
   cursor: pointer;
-  box-shadow: 0 12px 24px rgba(46, 109, 255, 0.42);
+  box-shadow: var(--glow-soft);
   transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease, opacity 0.22s ease;
 }
 
 .payment-button:hover:not(:disabled) {
   transform: translateY(-2px);
-  background: linear-gradient(135deg, #4da3ff, #2e6dff);
-  box-shadow: 0 14px 27px rgba(77, 163, 255, 0.48);
-  filter: none;
+  filter: brightness(1.03);
+  box-shadow: 0 16px 30px rgba(76, 146, 255, 0.36);
 }
 
 .payment-button:disabled {
@@ -50,9 +49,9 @@
 }
 
 .payment-feedback.info {
-  color: #d9ebff;
-  border: 1px solid rgba(77, 163, 255, 0.48);
-  background: rgba(23, 59, 102, 0.75);
+  color: #e6f5ff;
+  border: 1px solid rgba(174, 222, 255, 0.4);
+  background: rgba(20, 82, 136, 0.32);
 }
 
 @media (max-width: 760px) {

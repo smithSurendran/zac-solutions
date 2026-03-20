@@ -11,10 +11,10 @@
   padding: clamp(48px, 7vw, 72px) clamp(22px, 5vw, 56px);
   border-radius: 28px;
   background:
-    radial-gradient(circle at 18% 12%, rgba(77, 163, 255, 0.2), transparent 44%),
-    radial-gradient(circle at 89% 10%, rgba(46, 109, 255, 0.28), transparent 34%),
-    linear-gradient(148deg, #0b1f3a 8%, #0f2a4a 72%, #132f55 130%);
-  box-shadow: var(--shadow-md);
+    radial-gradient(circle at 18% 12%, rgba(77, 163, 255, 0.22), transparent 44%),
+    radial-gradient(circle at 89% 10%, rgba(119, 174, 255, 0.28), transparent 36%),
+    var(--royal-gradient);
+  box-shadow: 0 24px 46px rgba(10, 30, 64, 0.22);
 }
 
 .about-kicker {
@@ -23,19 +23,19 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #4da3ff;
+  color: rgb(237 181 65);
 }
 
 .about-hero h1 {
   margin-bottom: 14px;
   font-size: clamp(2rem, 5vw, 3.2rem);
-  color: #ffffff;
+  color: #f7fbff;
 }
 
 .about-hero p {
   margin: 0;
   max-width: 760px;
-  color: var(--text-secondary);
+  color: rgba(232, 244, 255, 0.92);
   font-size: clamp(1rem, 2vw, 1.18rem);
 }
 
@@ -49,14 +49,14 @@
 .about-card {
   padding: 26px 22px;
   border-radius: 20px;
-  border: 1px solid var(--border-soft);
-  background: linear-gradient(168deg, #173b66, #132f55);
+  border: 1px solid rgba(23, 63, 125, 0.14);
+  background: linear-gradient(168deg, #ffffff, #f8fbff);
   box-shadow: var(--shadow-sm);
 }
 
 .about-card h2 {
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #113257;
 }
 
 .about-card p {
@@ -68,15 +68,15 @@
   margin-top: 34px;
   padding: clamp(24px, 5vw, 34px);
   border-radius: 22px;
-  border: 1px solid var(--border-soft);
-  background: linear-gradient(170deg, #132f55, #102846);
+  border: 1px solid rgba(23, 63, 125, 0.14);
+  background: linear-gradient(170deg, #ffffff, #f7fbff);
   box-shadow: var(--shadow-sm);
 }
 
 .about-difference-head h2 {
   margin: 0 0 10px;
   font-size: clamp(1.62rem, 3.2vw, 2.08rem);
-  color: #ffffff;
+  color: #132f53;
 }
 
 .about-checklist {
@@ -91,14 +91,14 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  color: var(--text-secondary);
+  color: #284769;
   font-weight: 500;
 }
 
 .check-icon {
   margin-top: 2px;
   display: inline-flex;
-  color: #4da3ff;
+  color: var(--teal-700);
 }
 
 .check-icon svg {
@@ -110,23 +110,23 @@
   text-align: center;
   padding: clamp(32px, 6vw, 48px);
   border-radius: 24px;
-  border: 1px solid var(--border-soft);
+  border: 1px solid rgba(157, 197, 255, 0.28);
   background:
-    radial-gradient(circle at 86% 12%, rgba(77, 163, 255, 0.25), transparent 42%),
-    linear-gradient(156deg, #0f2a4a, #132f55);
-  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.35);
+    radial-gradient(circle at 86% 12%, rgba(125, 190, 255, 0.24), transparent 42%),
+    var(--royal-gradient);
+  box-shadow: 0 18px 36px rgba(10, 32, 68, 0.24);
 }
 
 .about-cta h2 {
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #f8fcff;
   font-size: clamp(1.62rem, 3.4vw, 2.2rem);
 }
 
 .about-cta p {
   margin: 0 auto 20px;
   max-width: 760px;
-  color: var(--text-secondary);
+  color: rgba(233, 244, 255, 0.92);
 }
 
 .about-cta-link {
@@ -139,15 +139,15 @@
   text-decoration: none;
   font-weight: 700;
   color: #ffffff;
-  background: linear-gradient(132deg, #2e6dff, #2459d6);
-  box-shadow: 0 12px 24px rgba(46, 109, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--blue-gradient);
+  box-shadow: var(--glow-soft);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
 .about-cta-link:hover {
   transform: translateY(-2px);
-  background: linear-gradient(132deg, #4da3ff, #2e6dff);
-  box-shadow: 0 15px 28px rgba(77, 163, 255, 0.44);
+  box-shadow: 0 16px 30px rgba(74, 144, 255, 0.34);
 }
 
 @media (max-width: 900px) {
