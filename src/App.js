@@ -1,11 +1,5 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Services from './pages/Services';
-import { DEFAULT_SERVICE_SLUG } from './config/subscriptionServices';
-import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
