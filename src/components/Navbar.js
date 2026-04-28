@@ -72,7 +72,7 @@ function Navbar() {
         <NavLink to="/" className="brand" onClick={closeAllMenus}>
           <img src={Logo} alt="Zack Solutions logo" />
           <span className="brand-copy">
-            <span className="brand-text">Zack Solutions</span>
+            <span className="brand-text">ZACK Software Solutions</span>
             <span className="brand-tagline">Transforming Business for Tomorrow</span>
           </span>
         </NavLink>

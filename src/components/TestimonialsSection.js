@@ -10,7 +10,7 @@ function TestimonialsSection() {
         <p className="section-kicker">Client Testimonials</p>
         <h2 id="testimonials-title">What Clients Are Saying</h2>
         <p>
-          Feedback from founders and operators who trusted Zack Solutions to strengthen their digital operations and
+          Feedback from founders and operators who trusted ZACK Software Solutions to strengthen their digital operations and
           implementation workflow.
         </p>
       </div>

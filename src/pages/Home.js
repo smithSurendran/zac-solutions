@@ -98,7 +98,7 @@ function Home() {
           <p className="section-kicker">Strategic Digital Infrastructure</p>
           <h1>Premium Digital and Operational Solutions for Growth-Focused Businesses</h1>
           <p className="hero-subtitle">
-            Zack Solutions delivers structured implementation across technology, operations, and digital visibility so
+            ZACK Software Solutions delivers structured implementation across technology, operations, and digital visibility so
             startups and service businesses can launch, manage, and scale with confidence.
           </p>
           <div className="hero-actions">
@@ -152,7 +152,7 @@ function Home() {
         <div className="strategic-copy">
           <div className="section-head left">
             <p className="section-kicker">Strategic Advantage</p>
-            <h2>Why Clients Choose Zack Solutions</h2>
+            <h2>Why Clients Choose ZACK Software Solutions</h2>
             <p>
               We combine implementation rigor with practical business context, so your investment turns into durable
               systems, not short-term patchwork.
@@ -189,7 +189,7 @@ function Home() {
             <p className="section-kicker">About Zack</p>
             <h2>Client-First by Design</h2>
             <p>
-              Zack Solutions supports founders and operators with technical implementation, digital infrastructure, and
+              ZACK Software Solutions supports founders and operators with technical implementation, digital infrastructure, and
               operational system design tailored to real business conditions.
             </p>
             <p>
@@ -236,7 +236,7 @@ function Home() {
       <footer className="home-footer section-shell">
         <div className="footer-grid">
           <div className="footer-brand">
-            <h3>Zack Solutions</h3>
+            <h3>ZACK Software Solutions</h3>
             <p>Transforming Business for Tomorrow through structured digital and operational implementation.</p>
           </div>
 
@@ -263,7 +263,7 @@ function Home() {
             <a href="mailto:hello@zacksolutions.com">hello@zacksolutions.com</a>
           </div>
         </div>
-        <div className="footer-bottom">© {new Date().getFullYear()} Zack Solutions. All rights reserved.</div>
+        <div className="footer-bottom">© {new Date().getFullYear()} ZACK Software Solutions. All rights reserved.</div>
       </footer>
     </div>
   );

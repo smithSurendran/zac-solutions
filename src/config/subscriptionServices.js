@@ -7,7 +7,7 @@ export const SERVICE_DETAILS = [
     navDescription:
       'Strategy, systems, and digital foundations for entrepreneurs and early-stage business teams.',
     intro: [
-      'Starting a business requires the right strategy, systems, and digital presence. Zack Solutions helps entrepreneurs transform ideas into structured, operational businesses with the tools and support needed to launch and scale successfully.',
+      'Starting a business requires the right strategy, systems, and digital presence. ZACK Software Solutions helps entrepreneurs transform ideas into structured, operational businesses with the tools and support needed to launch and scale successfully.',
       'Our startup support services simplify early-stage execution while establishing a strong foundation for long-term growth.',
     ],
     servicesIncluded: [
@@ -57,7 +57,7 @@ export const SERVICE_DETAILS = [
     cta: {
       heading: 'Launch Your Startup with Confidence',
       description:
-        'Whether you are starting with an idea or strengthening an early-stage business, Zack Solutions provides the strategy, technology, and operational support needed to move forward with clarity.',
+        'Whether you are starting with an idea or strengthening an early-stage business, ZACK Software Solutions provides the strategy, technology, and operational support needed to move forward with clarity.',
       primaryLabel: 'Get Started',
       secondaryLabel: 'Schedule a Consultation',
       paymentProductId: 'strategicBusinessDigitalSolutions',

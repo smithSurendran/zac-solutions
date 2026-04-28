@@ -15,7 +15,7 @@ function About() {
     <div className="about-page">
       <section className="about-hero">
         <p className="about-kicker">Who We Are</p>
-        <h1>About Zack Solutions</h1>
+        <h1>About ZACK Software Solutions</h1>
         <p>
           We help businesses simplify operations, modernize digital systems, and execute strategic priorities with
           clarity.
@@ -59,7 +59,7 @@ function About() {
       </section>
 
       <section className="about-cta">
-        <h2>Partner with Zack Solutions</h2>
+        <h2>Partner with ZACK Software Solutions</h2>
         <p>
           Whether you are launching something new or improving what you have built, we can help you move forward with
           stronger structure and measurable outcomes.

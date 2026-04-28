@@ -5,7 +5,7 @@ export const TESTIMONIALS = [
     role: 'Founder',
     company: 'BrightPath Studio',
     quote:
-      'Zack Solutions helped us bring structure to our online presence and made our launch process far more organized and scalable.',
+      'ZACK Software Solutions helped us bring structure to our online presence and made our launch process far more organized and scalable.',
     rating: 5,
     avatarText: 'SC',
     avatarStart: '#7fb5ff',
@@ -39,7 +39,7 @@ export const TESTIMONIALS = [
     name: 'Daniel Brooks',
     role: 'Startup Founder',
     company: 'Elevate Works',
-    quote: 'Zack Solutions translated our ideas into a cleaner digital system that made execution much easier.',
+    quote: 'ZACK Software Solutions translated our ideas into a cleaner digital system that made execution much easier.',
     rating: 5,
     avatarText: 'DB',
     avatarStart: '#9ac8ff',

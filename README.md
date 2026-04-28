@@ -1,11 +1,11 @@
-# ZACK Solutions Website
+# ZACK Software Solutions Website
 
-A responsive, modern business website for **ZACK Solutions**, built with React. The project includes custom pages for Home, About, and Contact, with dynamic form submission via EmailJS.
+A responsive, modern business website for **ZACK Software Solutions**, built with React. The project includes custom pages for Home, About, and Contact, with dynamic form submission via EmailJS.
 
 ---
 
 ## 🌐 Live Sections
-- **Home Page**: Overview of ZACK Solutions and services
+- **Home Page**: Overview of ZACK Software Solutions and services
 - **About Page**: Mission, vision, and what sets ZACK apart
 - **Contact Page**: Message form with EmailJS integration to send emails directly to a configured inbox
 
