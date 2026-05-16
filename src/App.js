@@ -4,13 +4,14 @@ import { DEFAULT_SERVICE_SLUG } from './config/subscriptionServices';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
+import Navbar from './components/Navbar';
 import Services from './pages/Services';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        {/* <Navbar /> */}
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
